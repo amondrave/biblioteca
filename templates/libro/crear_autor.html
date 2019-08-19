@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear autor</title>
+</head>
+<body>
+  <header>
+      <h1>Registre el Autor</h1>
+  </header>
+  <main>
+      <p>Bienvenido a la biblioteca de Cúcuta si tiene algún autor por favor registrelo</p>
+      <div class="formulario">
+          <form method="post">
+              {%csrf_token%}
+               {{ autor_form.as_p }}
+              <button type="submit">crear</button>
+          </form>
+      </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
